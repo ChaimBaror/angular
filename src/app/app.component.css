@@ -1,0 +1,5 @@
+div{
+    background: turquoise;
+    display: flex;
+    justify-content: space-evenly;
+}
