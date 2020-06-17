@@ -25,7 +25,7 @@ export class CalculatorComponent implements OnInit {
     this.number2=srt
   }
   delete(){
-    this.screen = "";
+    this.screen ="";
     this.number1=0
     this.number2=0
     this.result =''
