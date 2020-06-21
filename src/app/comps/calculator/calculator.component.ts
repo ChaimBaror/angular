@@ -10,7 +10,8 @@ export class CalculatorComponent implements OnInit {
   public screen: string = "";
   public number1: number;
   public number2: number;
-  public result;
+  public result  : string="";
+  public res  : number;
   public results = []
 
   constructor(private InputerSvc: MycalcoulatorserviceService ) { }
@@ -32,7 +33,7 @@ export class CalculatorComponent implements OnInit {
     this.results = []
     this.InputerSvc.imputArr=[]
   }
-  eqall() {
+  equal() {
 
     this.result = this.screen +" = "+eval(this.screen)
     this.results.push(eval(this.screen))
@@ -41,20 +42,20 @@ export class CalculatorComponent implements OnInit {
   } 
 
   sum() {
-    this.results.push(this.result = this.number1 + this.number2);
+    this.results.push(this.res = this.number1 + this.number2);
 
   }
 
   diff() {
-    this.results.push(this.result = this.number1 - this.number2);
+    this.results.push(this.res = this.number1 - this.number2);
   }
 
   mult() {
-    this.results.push(this.result = this.number1 * this.number2);
+    this.results.push(this.res = this.number1 * this.number2);
   }
 
   divi() {
-    this.results.push(this.result = this.number1 / this.number2);
+    this.results.push(this.res = this.number1 / this.number2);
   }
   ngOnInit(): void {
   }

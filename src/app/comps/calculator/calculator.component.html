@@ -1,11 +1,10 @@
 <p>calculator works!</p>
+<h1 style="text-align: center">calculator</h1>
 
 <div class="input">
     <br>
-    <label for="">number 1</label>
-    <input [(ngModel)]='number1' type="number">
-    <label for="">number 2</label>
-    <input [(ngModel)]='number2' type="number">
+    <label>ENTER number : </label><input [(ngModel)]='number1' type="number">
+    <label>ENTER number : </label><input [(ngModel)]='number2' type="number">
 
 </div>
 
@@ -18,32 +17,37 @@
     <button class="but" (click)='mult()'> x </button>&nbsp;&nbsp;&nbsp;
     <button class="but" (click)='divi()'> ÷ </button>
     <br><br><br>
+
+    
    <label>Display screen </label><br>
-   <input style="color: gray ;background: black ;width: 15%;" [value]="screen" [value]="results" ><br>
-    <input style="color: white ;background: black ; font-size: 30px; width: 15%;"
+   <input class="in" style="color: gray ;background: black ;width: 15%;" 
+   [value]="screen" [value]="results" ><br>
+    <input class="in" style="color: white ;background: black ; font-size: 30px; width: 15%;"
     [value]="number2" [value]="number1" [value]="result">
 
 </div>
 <div class="butcalculater">
         <br>
-        <button class="butt" (click)='num("%")'> ⁒ </button>&nbsp;&nbsp;
-        <button class="butt" (click)='num("^")'> ^ </button>&nbsp;&nbsp;
-        <button class="butt" (click)='num("+")'> + </button>&nbsp;&nbsp;
-        <button class="butt" (click)='num("-")'> - </button>&nbsp;&nbsp;
-        <button class="butt" (click)='num("*")'> ⁕ </button>&nbsp;&nbsp;
-        <button class="butt" (click)='num("/")'> ÷ </button>&nbsp;&nbsp;<br><br>
+        <button class="butt" (click)='num("%")'> % </button>&nbsp;&nbsp;&nbsp;
+        <button class="butt" (click)='num("^")'> ^ </button>&nbsp;&nbsp;&nbsp;
+        <button class="butt" (click)='num("+")'> + </button>&nbsp;&nbsp;&nbsp;
+        <button class="butt" (click)='num("-")'> - </button>&nbsp;&nbsp;&nbsp;<br><br>
+        <button class="butt" (click)='num("")'> 🤣 </button>&nbsp;&nbsp;&nbsp;
+        <button class="butt" (click)='num("*")'> ⁕ </button>&nbsp;&nbsp;&nbsp;
+        <button class="butt" (click)='num("/")'> ÷ </button>&nbsp;&nbsp;&nbsp;
+        <button class="butt" (click)='num("")'> 🤷‍</button>&nbsp;&nbsp;&nbsp;<br><br>
         <button class="butt" (click)='num("1")'> 1 </button>&nbsp;&nbsp;&nbsp;
         <button class="butt" (click)='num("2")'> 2 </button>&nbsp;&nbsp;&nbsp;
         <button class="butt" (click)='num("3")'> 3 </button>&nbsp;&nbsp;&nbsp;
-        <button class="butt" (click)='num("4")'> 4 </button>&nbsp;<br><br>
+        <button class="butt" (click)='num("4")'> 4 </button>&nbsp;&nbsp;&nbsp;<br><br>
         <button class="butt" (click)='num("5")'> 5 </button>&nbsp;&nbsp;&nbsp;
         <button class="butt" (click)='num("6")'> 6 </button>&nbsp;&nbsp;&nbsp;
         <button class="butt" (click)='num("7")'> 7 </button>&nbsp;&nbsp;&nbsp;
-        <button class="butt" (click)='num("8")'> 8 </button>&nbsp;<br><br>
-        <button class="butt" (click)='num("9")'> 9 </button>&nbsp;
-        <button class="butt" (click)='num("0")'> 0 </button>&nbsp;
-        <button class="butt" (click)='delete()'> delete </button>&nbsp;<br><br>
-        <button style="width: 10%" class="butt" (click)='eqall()'> = </button>&nbsp;&nbsp;&nbsp;
+        <button class="butt" (click)='num("8")'> 8 </button>&nbsp;&nbsp;&nbsp;<br><br>
+        <button style="font-size: 150%" class="butt" (click)='equal()'> = </button>&nbsp;&nbsp;&nbsp;
+        <button class="butt" (click)='num("9")'> 9 </button>&nbsp;&nbsp;&nbsp;
+        <button class="butt" (click)='num("0")'> 0 </button>&nbsp;&nbsp;&nbsp;
+        <button style="color: red ;font-size: 150%" class="butt" (click)='delete()'> delete </button>&nbsp;  
         <br><br><br>
 </div>
 
